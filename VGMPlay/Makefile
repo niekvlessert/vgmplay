@@ -120,7 +120,7 @@ ifeq ($(MACOSX), 1)
 #CFLAGS += -I/some/path
 else
 # for Linux, add librt (clock stuff) and libpthread (threads)
-LDFLAGS += -lrt -lpthread -pthread
+LDFLAGS += -lpthread -pthread
 endif
 MAINFLAGS += -pthread -DSHARE_PREFIX=\"$(PREFIX)\"
 endif
