@@ -50,7 +50,7 @@
 #include <mach/mach_time.h>
 #define CLOCK_REALTIME	0
 #define CLOCK_MONOTONIC	0
-int clock_gettime(int clk_id, struct timespec *t)
+/*int clock_gettime(int clk_id, struct timespec *t)
 {
 	mach_timebase_info_data_t timebase;
 	mach_timebase_info(&timebase);
@@ -61,7 +61,7 @@ int clock_gettime(int clk_id, struct timespec *t)
 	t->tv_sec = seconds;
 	t->tv_nsec = nseconds;
 	return 0;
-}
+}*/
 #else
 #include <time.h>		// for clock_gettime()
 #endif
