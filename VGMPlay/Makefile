@@ -231,7 +231,7 @@ VGM2WAV_OBJS = \
 EXTRA_OBJS = $(VGMPLAY_OBJS) $(VGM2PCM_OBJS) $(VGM2WAV_OBJS)
 
 
-all:	vgmplay vgm2pcm vgm2wav
+all:	vgmplay
 
 vgmplay:	$(EMUOBJS) $(MAINOBJS) $(VGMPLAY_OBJS)
 	@echo Linking vgmplay ...
